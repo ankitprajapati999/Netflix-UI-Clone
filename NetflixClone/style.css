@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: black;
+    color: white;
+
+}
+header {
+    background: black;
+}
+
+.banner {
+    background-image: url("Assets/Hoarding/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    height: 98vh;
+    position: relative;
+    color: white;
+}
+
+.banner .box {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+    height: 98vh;
+    width: 100%;
+    box-shadow: inset 0px 0px 1000px 100px rgba(0, 0, 0, 0.8);
+}
+
+
+.banner nav {
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    max-width: 2000px;
+    display: flex;
+    box-sizing: border-box;
+    
+    padding: 1.5rem clamp(1rem, 10vw, 9rem);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner nav >span > img {
+    width: 148px;
+    
+}
+/* 
+.Seprator {
+    position: absolute;
+    bottom: 0;
+    max-width: 2000px;
+    max-height: 20vh;
+    width: 100%;
+    text-align: center;
+    background:url("Assets/Hoarding/Ring.png");
+}
+.Seprator > img {
+    width: 100%;
+} */
+
+
+.text {
+    top: clamp(3rem, 20vh, 1000px);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.text h1 {
+    font-size: 4rem; /* 2rem, 2.5rem, 3.5rem, */
+    font-weight: 1000;
+}
+
+
+
+
+.text h3 {
+    font-size: 1.25rem;
+    font-weight: 650;
+}
+
+.text > p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.mail #mail{
+    height: 7vh;
+    max-height: 14vh;
+    flex: 1;
+    padding: 0 1.3rem;
+    background-color: rgba(0, 0, 0, 0.397);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgb(52,50,50,1);
+    color: whitesmoke;
+    font-size: 1.03rem;
+    border-radius: 5px;
+    line-height: 1.5;
+    caret-color: red;
+    box-sizing: border-box;
+    transition: 100ms;
+}
+
+#mail:focus {
+    border:4px solid rgb(52,50,50,1) !important;    
+    outline: 2px solid white; 
+}
+ 
+.mail {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    width: 40vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.mail #mail::placeholder {
+    font-size: 1.12rem;
+}
+
+
+.r-btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+}
+
+
+.gtst {
+    padding: 1rem 1.5rem;
+    font-size: 1.4em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+.sgn {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.lang-btn {
+    background-color: rgba(0, 0, 0, 0.219);
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.02rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    gap: 2rem;
+
+}
+.lang-btn > svg {
+    width:15px;
+}
+.switch {
+    display: none;
+}
+
+
+main {
+    position: relative;
+    background-color: black;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.Cards {
+    max-width: min(1300px, 80vw);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    color: white;
+}
+.carad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 370px;
+    max-height: 350px;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.carad > .txt {
+    line-height: 1.7rem;
+}
+
+.carad > .txt > h4 {
+    font-size: 1.24rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.carad > .txt > p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.carad > span {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+}
+.Cards > .carad {
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+
+.moree {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: min(1300px, 80vw);
+    margin: 0.6rem auto;
+}
+
+.caraousal {
+    max-width: min(1300px, 80vw);
+    margin: auto;
+    padding: 3.5rem 1rem;
+    position: relative;
+}
+.caraousal h3 {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    top: 0;
+    left: 0;
+}
+.caraousal .scroller {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: inline mandatory;
+    anchor-name: --caraousal;
+}
+
+.caraousal .scroller::scroll-button(right), .caraousal .scroller::scroll-button(left)  {
+    content: url("Assets/Icons/right.svg");
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    height: 8rem;
+    width: 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #111;
+    position-anchor: --caraousal;
+    position-area: right center;
+    transition: 400ms ease-in-out;
+}
+
+.caraousal .scroller::scroll-button(left) {
+    content: url("Assets/Icons/left.svg");
+    position-area: left center;
+}
+
+.caraousal .scroller::scroll-button(right):disabled{
+    translate: 100%;
+    opacity: 0;
+}
+
+.caraousal .scroller::scroll-button(left):disabled {
+    translate: -100%;
+    opacity: 0;
+}
+
+.scroller .con {
+    position: relative;
+    display: flex;
+    align-items: end;
+    margin: 1.2rem;
+    scroll-snap-align: end;
+}
+.scroller > .con > span {
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 80px black;
+    translate: -35%;
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    -webkit-text-fill-color: rgba(0, 0, 0, 1);
+}
+.caraousal .scroller::-webkit-scrollbar {
+    display: none;
+}
+.caraousal > .scroller > .con > .image {
+    border-radius: 9px;
+}
+
+
+
+.faq {
+    max-width: min(1300px, 80vw);
+    margin: 3rem auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.456rem;
+}
+
+.faq > .title > h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.faqbox > .faque > svg {
+    width: min(2.5rem, 4vw);
+    text-align: center;
+}
+
+.faqbox > .faque {
+    background-color: #2d2d2d;
+    padding: 1.4rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: max(4rem, 10vw);
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.faque:hover {
+    background-color: #3a3a3a;
+}
+.faq > .faqbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.faq > .faqbox > .para {
+    display: none;
+    background-color: #2d2d2d;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2rem;
+    transition: 300ms;
+}
+
+
+.greet{
+    max-width: min(1300px, 80vw);
+    margin: 10px 30vw;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footmail {
+    max-width: 1300px;
+    width: 60vw;
+}
+
+
+.bottom-box {
+    max-width: min(1300px, 80vw);
+    margin: 2rem auto;
+}
+.bottom-box > .que-call {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+.que-call > a {
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    color: rgb(205, 223, 232);
+
+}
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+.links > .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+.link > a {
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    color: rgb(205, 223, 232);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.lang-btn-foot {
+    max-width: min(1300px, 80vw);
+    margin: 2rem auto;
+}
+
+
+.lang-btn-foot > .net {
+    color: rgba(205, 223, 232, 0.881);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 6vh;
+}
+
+.inst {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+.inst > p > a {
+    color: rgb(68, 142, 244);
+}
+@media(max-width:300px) {
+    body {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width:3000px) {
+    .text h1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .footmail {
+        max-width: 30vw;
+    }
+    .greet {
+        margin: 10px 40vw;
+    }
+}
+
+@media (max-width:2500px) {
+    .footmail {
+        max-width: 1300px;
+        width: 60vw;
+    }
+    .greet{
+        max-width: min(1300px, 80vw);
+        margin: 10px 30vw;
+    }
+}
+
+@media (max-width:1280px) {
+    .text h3 {
+        font-size: 1rem;
+    }
+    .text h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .gtst {
+        padding: 0.8rem 1rem;
+        font-size: 1em;
+    }
+
+    .text .mail > #mail {
+        height: 6vh;
+    }
+   
+}
+
+@media (max-width:960px) {
+
+    .faq {
+        max-width: min(1300px, 90vw);
+    }
+
+    .banner {
+        height: 80vh;
+    }
+    .banner .box  {
+        height: 80vh;
+    }
+    .text h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .greet{
+        max-width: min(1300px, 80vw);
+        margin: 10px 10vw;
+    }
+    .footmail {
+      margin: auto 10vw;
+    }
+    .footmail > .gtst {
+        height: 100%;
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .lang-btn {
+        display: none;
+    } 
+    .switch {
+        display: inline;
+    }
+    .greet{
+        max-width: min(1300px, 80vw);
+        margin: 10px 10vw;
+        font-size: small;
+    }
+    .footmail {
+        margin: auto;
+    }
+
+    .faqbox > .faque {
+        font-size: 1rem;
+        padding: 1.1rem 1rem;
+    }
+}
+
+
+@media (max-width:477px) {
+    .gtst {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    .faqbox > .faque {
+        font-size: 0.8rem;
+        padding: 1rem 0.8rem;
+    }
+}
+
+
+@media (max-width:415px) {
+    .banner nav >span > img {
+        display: none;
+    }
+}
+
