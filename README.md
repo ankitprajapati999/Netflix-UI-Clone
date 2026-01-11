@@ -65,10 +65,10 @@ That’s it. No ✨ JavaScript ✨. No ✨ NPM ✨. No ✨ drama ✨.
 
 ## 📸 Screenshots
 
-![Desktop Preview](assets/desktop.png)
+![Desktop Preview](Assets/desktop.png)
 *Looks crisp.*
 
-![Mobile Preview](assets/mobile.png)
+![Mobile Preview](Assets/mobile.png)
 *Also vibes on smaller screens.*
 
 (Add your own screenshots in `assets/` ✨)
