@@ -71,8 +71,6 @@ That’s it. No ✨ JavaScript ✨. No ✨ NPM ✨. No ✨ drama ✨.
 ![Mobile Preview](Assets/mobile.png)
 *Also vibes on smaller screens.*
 
-(Add your own screenshots in `assets/` ✨)
-
 ---
 
 ## 👤 Built By
