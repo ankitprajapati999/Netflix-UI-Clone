@@ -11,7 +11,7 @@ No JavaScript. No frameworks. Just pure frontend hustle.
 
 ## 🌍 Live Demo
 
-🔗 [Demo Site](https://netflix-ui-clone-beige.vercel.app/)
+🔗 [Demo Site](https://really-the-demo.vercel.app/)
 (Live on GitHub Pages — because static sites rule.)
 
 ---
